@@ -29,3 +29,15 @@ console.log(Math.ceil(7.015))
 // -------------------------- Math.floor() --------------------------
 
 console.log(Math.floor(7.915))
+
+// -------------------------- Math.pow() --------------------------
+console.log(Math.pow(4, 4)) // Affiche 256 dans la console = 4*4*4*4
+
+// -------------------------- Math.round() --------------------------
+
+console.log(Math.round(3.33)) // Affiche 3
+console.log(Math.round(3.5)) // Affiche 4
+console.log(Math.round(3.85)) // Affiche 4
+console.log(Math.round(3.85*100)/100) // Affiche 3.85
+
+// Si le paramètre n'est pas un nombre return NaN
