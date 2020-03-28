@@ -10,3 +10,6 @@ console.log(entier)
 
 // Math.min()
 console.log(Math.min(-3, 2, 9))
+
+// Math.max()
+console.log(Math.max(4,919,3))
