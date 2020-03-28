@@ -41,3 +41,20 @@ console.log(Math.round(3.85)) // Affiche 4
 console.log(Math.round(3.85*100)/100) // Affiche 3.85
 
 // Si le paramètre n'est pas un nombre return NaN
+
+// -------------------------- Math.sign() --------------------------
+
+console.log(Math.sign(2)) // Affiche 1
+console.log(Math.sign(-2)) // Affiche -1
+console.log(Math.sign(0)) // Affiche 0
+console.log(Math.sign(-0))  // Affiche -0
+console.log(Math.sign("test")) // Affiche NaN
+
+// -------------------------- Math.PI() --------------------------
+console.log(Math.PI) // Affiche 3.141592653589793
+
+// Cette fonction utilise Math.PI pour calculer la circonférence d'un cercle avec un rayon donné
+function circonference(radius){
+return  Math.PI * (radius + radius);
+}
+console.log(circonference(2)); // Affiche 12.566370614359172
