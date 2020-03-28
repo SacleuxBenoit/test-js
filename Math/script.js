@@ -31,7 +31,8 @@ console.log(Math.ceil(7.015))
 console.log(Math.floor(7.915))
 
 // -------------------------- Math.pow() --------------------------
-console.log(Math.pow(4, 4)) // Affiche 256 dans la console = 4*4*4*4
+console.log(Math.pow(4, 4)) // Affiche 256 = 4*4*4*4
+console.log(Math.pow(4, 6/3)) // Affiche 16
 
 // -------------------------- Math.round() --------------------------
 
