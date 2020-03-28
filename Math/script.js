@@ -59,3 +59,21 @@ function circonference(radius){
 return  Math.PI * (radius + radius);
 }
 console.log(circonference(2)); // Affiche 12.566370614359172
+
+// -------------------------- Math.LN2 --------------------------
+console.log(Math.LN2); // Affiche 0.6931471805599453
+
+// -------------------------- Math.LN10 --------------------------
+console.log(Math.LN10); // Affiche 2.302585092994046
+
+// -------------------------- Math.Log2() --------------------------
+
+console.log(Math.log2(3)) // Affiche 1.584962500721156
+console.log(Math.log2(0)) // Affiche -infinity
+console.log(Math.log2(-3)) // Affiche NaN
+
+// -------------------------- Math.Log10() --------------------------
+
+console.log(Math.log10(3)) // Affiche 0.47712125471966244
+console.log(Math.log10(0)) // Affiche -infinity
+console.log(Math.log10(-3)) // Affiche NaN
