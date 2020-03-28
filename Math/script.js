@@ -7,3 +7,6 @@ function entierAleatoire(min,max){
 }
 const entier = entierAleatoire(1,10);
 console.log(entier)
+
+// Math.min()
+console.log(Math.min(-3, 2, 9))
