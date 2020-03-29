@@ -92,3 +92,14 @@ console.log(Math.SQRT1_2) // Affiche 0.7071067811865476
 // -------------------------- Math.SQRT2 --------------------------
 
 console.log(Math.SQRT2) // Affiche 1.4142135623730951
+
+// -------------------------- Math.sqrt() --------------------------
+
+console.log(Math.sqrt(6)) // Affiche 2.449489742783178
+console.log(Math.sqrt(-0))
+console.log(Math.sqrt(-6)) // Affiche NaN
+
+// -------------------------- Math.abs() --------------------------
+
+console.log(Math.abs(11)) // Affiche 11
+console.log(Math.abs(-11)) // Affiche 11
