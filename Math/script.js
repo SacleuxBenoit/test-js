@@ -103,3 +103,27 @@ console.log(Math.sqrt(-6)) // Affiche NaN
 
 console.log(Math.abs(11)) // Affiche 11
 console.log(Math.abs(-11)) // Affiche 11
+
+// -------------------------- Math.sin() --------------------------
+
+console.log(Math.sin(8)) // Affiche 0.9893582466233818
+console.log(Math.sin(-8)) // Affiche -0.9893582466233818
+console.log(Math.sin(0)) // Affiche 0
+
+// -------------------------- Math.sinh() --------------------------
+
+console.log(Math.sinh(8)) // Affiche 1490.4788257895502
+console.log(Math.sinh(-8)) // Affiche -1490.4788257895502
+console.log(Math.sinh(0)) // Affiche 0
+
+// -------------------------- Math.cos() --------------------------
+
+console.log(Math.cos(4)) // Affiche -0.6536436208636119
+console.log(Math.cos(-4)) // Affiche -0.6536436208636119
+console.log(Math.cos(0)) // Affiche 1
+
+// -------------------------- Math.cos() --------------------------
+
+console.log(Math.cosh(4)) // Affiche 27.308232836016487
+console.log(Math.cosh(-4)) // Affiche 27.308232836016487
+console.log(Math.cosh(0)) // Affiche 1
