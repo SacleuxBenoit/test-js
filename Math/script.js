@@ -122,8 +122,33 @@ console.log(Math.cos(4)) // Affiche -0.6536436208636119
 console.log(Math.cos(-4)) // Affiche -0.6536436208636119
 console.log(Math.cos(0)) // Affiche 1
 
-// -------------------------- Math.cos() --------------------------
+// -------------------------- Math.cosh() --------------------------
 
 console.log(Math.cosh(4)) // Affiche 27.308232836016487
 console.log(Math.cosh(-4)) // Affiche 27.308232836016487
 console.log(Math.cosh(0)) // Affiche 1
+
+// -------------------------- Math.acos() --------------------------
+
+console.log(Math.acos(1)) // Affiche 0
+console.log(Math.acos(-1)) // Affiche 3.141592653589793
+console.log(Math.acos(0)) // Affiche 1.5707963267948966
+console.log(Math.acos(-2)) // Affiche NaN
+
+// -------------------------- Math.acosh() --------------------------
+
+console.log(Math.acosh(6)) // Affiche 2.477888730288475
+console.log(Math.acosh(0)) // Affiche NaN
+// Return NaN si le nombre est plus petit que 1
+
+// -------------------------- Math.asin() --------------------------
+
+console.log(Math.asin(1)) // Affiche 1.5707963267948966
+console.log(Math.asin(-1)) // Affiche -1.5707963267948966
+console.log(Math.asin(0)) // Affiche 0
+
+// -------------------------- Math.asinh() --------------------------
+
+console.log(Math.asinh(1)) // Affiche 0.881373587019543
+console.log(Math.asinh(-1)) // Affiche -0.881373587019543
+console.log(Math.asinh(0)) // Affiche 0
