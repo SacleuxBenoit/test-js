@@ -52,6 +52,7 @@ console.log(Math.sign(-0))  // Affiche -0
 console.log(Math.sign("test")) // Affiche NaN
 
 // -------------------------- Math.PI() --------------------------
+
 console.log(Math.PI) // Affiche 3.141592653589793
 
 // Cette fonction utilise Math.PI pour calculer la circonférence d'un cercle avec un rayon donné
@@ -61,9 +62,11 @@ return  Math.PI * (radius + radius);
 console.log(circonference(2)); // Affiche 12.566370614359172
 
 // -------------------------- Math.LN2 --------------------------
+
 console.log(Math.LN2); // Affiche 0.6931471805599453
 
 // -------------------------- Math.LN10 --------------------------
+
 console.log(Math.LN10); // Affiche 2.302585092994046
 
 // -------------------------- Math.Log2() --------------------------
@@ -77,3 +80,15 @@ console.log(Math.log2(-3)) // Affiche NaN
 console.log(Math.log10(3)) // Affiche 0.47712125471966244
 console.log(Math.log10(0)) // Affiche -infinity
 console.log(Math.log10(-3)) // Affiche NaN
+
+// -------------------------- Math.E --------------------------
+
+console.log(Math.E) // Affiche 2.718281828459045
+
+// -------------------------- Math.SQRT1_2 --------------------------
+
+console.log(Math.SQRT1_2) // Affiche 0.7071067811865476
+
+// -------------------------- Math.SQRT2 --------------------------
+
+console.log(Math.SQRT2) // Affiche 1.4142135623730951
