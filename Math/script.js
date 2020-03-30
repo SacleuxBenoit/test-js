@@ -152,3 +152,32 @@ console.log(Math.asin(0)) // Affiche 0
 console.log(Math.asinh(1)) // Affiche 0.881373587019543
 console.log(Math.asinh(-1)) // Affiche -0.881373587019543
 console.log(Math.asinh(0)) // Affiche 0
+
+// -------------------------- Math.tan() --------------------------
+// note : la fonction ci-dessous calcul la tangente après avoir converti l'argument en radians
+function getTanDeg(deg) {
+  const rad = deg * Math.PI/180;
+  return Math.tan(rad);
+}
+console.log(getTanDeg(45)) // Affiche 0.9999999999999999
+
+// -------------------------- Math.tanh() --------------------------
+
+console.log(Math.tanh(0)) // Affiche 0
+console.log(Math.tanh(1)) // Affiche 0.7615941559557649
+console.log(Math.tanh(Infinity)) // Affiche 1 
+
+// -------------------------- Math.atan() --------------------------
+
+console.log(Math.atan(2)) // Affiche 1.1071487177940906
+console.log(Math.atan(-2)) // Affiche -1.1071487177940906
+console.log(Math.atan(Infinity)) // Affiche 1.5707963267948966
+console.log(Math.atan(-Infinity)) // Affiche -1.5707963267948966
+
+// -------------------------- Math.atanh() --------------------------
+
+// Pour les valeurs strictement inférieures à -1 ou strictement supérieures à 1, NaN sera renvoyé
+console.log(Math.atanh(0)) // Affiche 0
+console.log(Math.atanh(1)) // Affiche Infinity
+console.log(Math.atanh(2)) // Affiche NaN
+console.log(Math.atanh(-2)) // Affiche NaN
