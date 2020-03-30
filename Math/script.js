@@ -181,3 +181,25 @@ console.log(Math.atanh(0)) // Affiche 0
 console.log(Math.atanh(1)) // Affiche Infinity
 console.log(Math.atanh(2)) // Affiche NaN
 console.log(Math.atanh(-2)) // Affiche NaN
+
+// -------------------------- Math.cbrt() --------------------------
+
+console.log(Math.cbrt(1)) // Affiche 1
+console.log(Math.cbrt(-1)) // Affiche -1
+console.log(Math.cbrt(Infinity)) // Affiche Infinity
+console.log(Math.cbrt(null)) // Affiche 0
+console.log(Math.cbrt(2)) // Affiche 1.2599210498948732
+
+// -------------------------- Math.clz32() --------------------------
+// Note : clz32 = raccourcis pour CountLeadingZeroes32
+console.log(Math.clz32(1)) // Affiche 31
+console.log(Math.clz32(100)) // Affiche 25
+console.log(Math.clz32(false)) // Affiche 32
+
+// -------------------------- Math.exp() --------------------------
+
+console.log(Math.exp(2)) // Affiche 7.38905609893065
+console.log(Math.exp(-2)) // Affiche 0.1353352832366127
+console.log(Math.exp(Infinity)) // Affiche Infinity
+
+// -------------------------- Math.expml() --------------------------
