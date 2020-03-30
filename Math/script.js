@@ -202,4 +202,29 @@ console.log(Math.exp(2)) // Affiche 7.38905609893065
 console.log(Math.exp(-2)) // Affiche 0.1353352832366127
 console.log(Math.exp(Infinity)) // Affiche Infinity
 
-// -------------------------- Math.expml() --------------------------
+// -------------------------- Math.fround() --------------------------
+
+console.log(Math.fround(2)) // Affiche 2
+console.log(Math.fround(-2)) // Affiche -2
+console.log(Math.fround(2,788)) // Affiche 2
+console.log(Math.fround(false)) // Affiche 0
+
+// -------------------------- Math.hypot() --------------------------
+
+console.log(Math.hypot()) // Affiche 0
+console.log(Math.hypot(5, 7)) // Affiche 8.602325267042627
+console.log(Math.hypot(5, 7, "test")) // Affiche "NaN"
+console.log(Math.hypot(-4)) // Affiche 4
+
+// -------------------------- Math.imul() --------------------------
+
+console.log(Math.imul(5, 7)) // Affiche 35
+console.log(Math.imul(-5, 7)) // Affiche -35
+console.log(Math.imul(0, 7)) // Affiche 0
+
+// -------------------------- Math.log() --------------------------
+
+console.log(Math.log(-2)) // Affiche NaN
+console.log(Math.log(2)) // Affiche 0.6931471805599453
+console.log(Math.log(0)) // Affiche -Infinity
+console.log(Math.log(5)) // Affiche 1.6094379124341003
