@@ -247,3 +247,9 @@ console.log(Math.log2(2)) // Affiche 1
 console.log(Math.log2(1)) // Affiche 0
 console.log(Math.log2(2048)) // Affiche 11
 console.log(Math.log2(-1)) // Affiche NaN
+
+// -------------------------- Math.trunc() --------------------------
+
+console.log(Math.trunc(3.1415)) // Affiche 3
+console.log(Math.trunc(-3.1415)) // Affiche -3
+console.log(Math.trunc(37.149715)) // Affiche 37
