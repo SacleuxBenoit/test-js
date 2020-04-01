@@ -15,3 +15,27 @@ console.log(elem[1]) // Affiche 9
 
 const last = [3, 8, 238, 278]
 console.log(last[last.length-1]) // Affiche 278
+
+// --------------- Ajouter un element au début du tableau --------------- 
+
+const addStart = [2, 923, 2093]
+addStart.unshift(300)
+console.log(addStart) // Affiche [300, 2, 923, 2093]
+
+// --------------- Ajouter un element à la fin du tableau --------------- 
+
+const addEnd = [2, 923, 2093]
+addEnd.push("apple")
+console.log(addEnd) // Affiche [2, 923, 2093, "apple"]
+
+// --------------- Supprimer un element au début du tableau --------------- 
+
+const deleteStart = ["delete", "not delete"]
+deleteStart.shift()
+console.log(deleteStart) // Affiche ["not delete"]
+
+// --------------- Supprimer un element à la fin du tableau --------------- 
+
+const deleteEnd = ["i am still here", "i am delete"]
+deleteEnd.pop()
+console.log(deleteEnd) // Affiche ["i am still here"]
