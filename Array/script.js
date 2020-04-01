@@ -39,3 +39,18 @@ console.log(deleteStart) // Affiche ["not delete"]
 const deleteEnd = ["i am still here", "i am delete"]
 deleteEnd.pop()
 console.log(deleteEnd) // Affiche ["i am still here"]
+
+// --------------- Trouver l'index d'un element dans le tableau --------------- 
+
+const findIndex = [7687, 0876, 23, 021]
+console.log(findIndex.indexOf(23)) // Affiche 2
+
+// --------------- Supprimer un ou plusieurs elements grâce à leurs index --------------- 
+
+const deleteElem = ["Apple", "Orange", "Bananas", 123]
+deleteElem.splice(2,2)
+console.log(deleteElem) // Affiche ["Apple", "orange"]
+
+// --------------- Copier un tableau--------------- 
+const copyArray = ["Name", "Surname", "Username"]
+console.log(copyArray.slice()) // Affiche ["Name", "Surname", "Username"]
