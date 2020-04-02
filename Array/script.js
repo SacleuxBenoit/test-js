@@ -45,6 +45,10 @@ console.log(deleteEnd) // Affiche ["i am still here"]
 const findIndex = [7687, 0876, 23, 021]
 console.log(findIndex.indexOf(23)) // Affiche 2
 
+// --------------- Trouver l'index du dernier element recherché dans le tableau --------------- 
+const findLastIndex = [1, 2, 12, 192, 11,234, 901, 11]
+console.log(findLastIndex.lastIndexOf(11)) // Affiche 7
+
 // --------------- Supprimer un ou plusieurs elements grâce à leurs index --------------- 
 
 const deleteElem = ["Apple", "Orange", "Bananas", 123]
@@ -70,7 +74,6 @@ const numberSort = [5, 2, 1, 9]
 console.log(numberSort.sort()) // Affiche [1,2,5,9]
 
 // --------------- Trier un tableau par ordre décroissant --------------- 
-
 
 const reverseSort = ["Zorro", "Hercule", "Ulysse"]
 console.log(reverseSort.reverse(reverseSort.sort())) // Affiche ["Zorro", "Ulysse", "Hercule"]
