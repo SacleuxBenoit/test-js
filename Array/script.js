@@ -66,8 +66,14 @@ console.log(arrayReverse.reverse()) // Affiche [5,4,3,2,1]
 const arraySort = ["Zorro", "Hercule", "Ulysse"]
 console.log(arraySort.sort()) // Affiche ["Hercule", "Ulysse", "Zorro"]
 
+const numberSort = [5, 2, 1, 9]
+console.log(numberSort.sort()) // Affiche [1,2,5,9]
+
 // --------------- Trier un tableau par ordre décroissant --------------- 
 
 
 const reverseSort = ["Zorro", "Hercule", "Ulysse"]
 console.log(reverseSort.reverse(reverseSort.sort())) // Affiche ["Zorro", "Ulysse", "Hercule"]
+
+const reverseNumber = [5, 2, 1, 9]
+console.log(reverseNumber.reverse(reverseNumber.sort())) // Affiche [9,5,2,1]
