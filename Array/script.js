@@ -52,5 +52,22 @@ deleteElem.splice(2,2)
 console.log(deleteElem) // Affiche ["Apple", "orange"]
 
 // --------------- Copier un tableau--------------- 
+
 const copyArray = ["Name", "Surname", "Username"]
 console.log(copyArray.slice()) // Affiche ["Name", "Surname", "Username"]
+
+// --------------- Retourner un tableau--------------- 
+
+const arrayReverse = [1,2,3,4,5]
+console.log(arrayReverse.reverse()) // Affiche [5,4,3,2,1]
+
+// --------------- Trier un tableau par ordre croissant --------------- 
+
+const arraySort = ["Zorro", "Hercule", "Ulysse"]
+console.log(arraySort.sort()) // Affiche ["Hercule", "Ulysse", "Zorro"]
+
+// --------------- Trier un tableau par ordre décroissant --------------- 
+
+
+const reverseSort = ["Zorro", "Hercule", "Ulysse"]
+console.log(reverseSort.reverse(reverseSort.sort())) // Affiche ["Zorro", "Ulysse", "Hercule"]
