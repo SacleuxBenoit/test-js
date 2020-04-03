@@ -55,6 +55,16 @@ const deleteElem = ["Apple", "Orange", "Bananas", 123]
 deleteElem.splice(2,2)
 console.log(deleteElem) // Affiche ["Apple", "orange"]
 
+// --------------- Exploser une chaîne de caractères en tableau --------------- 
+
+const str = "Facebook/Twitter/Instagram/Linkedin"
+const table = str.split("/")
+console.log(table) // Affiche ["Facebook" "Twitter" "Instagram" "Linkedin"]
+
+// --------------- à faire : join --------------- 
+
+
+
 // --------------- Copier un tableau--------------- 
 
 const copyArray = ["Name", "Surname", "Username"]
