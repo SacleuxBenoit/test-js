@@ -91,3 +91,9 @@ console.log(reverseSort.reverse(reverseSort.sort())) // Affiche ["Zorro", "Ulyss
 
 const reverseNumber = [5, 2, 1, 9]
 console.log(reverseNumber.reverse(reverseNumber.sort())) // Affiche [9,5,2,1]
+
+// --------------- Partie Concat --------------- 
+
+// --------------- Partie Filter --------------- 
+
+// --------------- Partie map --------------- 
