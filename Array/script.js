@@ -61,9 +61,10 @@ const str = "Facebook/Twitter/Instagram/Linkedin"
 const table = str.split("/")
 console.log(table) // Affiche ["Facebook" "Twitter" "Instagram" "Linkedin"]
 
-// --------------- à faire : join --------------- 
+// --------------- Transformer un tableau en chaîne de caractères --------------- 
 
-
+const ArrayJoin = ["Apple", "Bananas", "Orange"]
+console.log(ArrayJoin.join(", ")) // Affiche "Apple, Bananas, Orange"
 
 // --------------- Copier un tableau--------------- 
 
