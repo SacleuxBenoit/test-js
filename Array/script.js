@@ -92,14 +92,16 @@ console.log(reverseSort.reverse(reverseSort.sort())) // Affiche ["Zorro", "Ulyss
 const reverseNumber = [5, 2, 1, 9]
 console.log(reverseNumber.reverse(reverseNumber.sort())) // Affiche [9,5,2,1]
 
-// --------------- Partie Concat --------------- 
+// --------------- Merge 2 tableaux --------------- 
+
 const arrayConcat = ["This", "is a test"]
 const anotherArrayConcat = ["for", "concat"]
 console.log(arrayConcat.concat(anotherArrayConcat)) // Affiche ["this", "is a test", "for", "concat"]
-// --------------- Partie Filter --------------- 
+
+// --------------- Filtrer des éléments dans un tableau --------------- 
+
 const age = [15, 22, 11, 95]
 function checkAdult(age){
     return age >= 18
 }
 console.log(age.filter(checkAdult)) // Affiche [22, 95]
-// --------------- Partie map --------------- 
