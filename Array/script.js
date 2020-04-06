@@ -45,6 +45,9 @@ console.log(deleteEnd) // Affiche ["i am still here"]
 const findIndex = [7687, 0876, 23, 021]
 console.log(findIndex.indexOf(23)) // Affiche 2
 
+const findIndexFalse = [7687, 0876, 23, 021]
+console.log(findIndexFalse.indexOf(25)) // Affiche -1
+
 // --------------- Trouver l'index du dernier element recherché dans le tableau --------------- 
 const findLastIndex = [1, 2, 12, 192, 11,234, 901, 11]
 console.log(findLastIndex.lastIndexOf(11)) // Affiche 7
