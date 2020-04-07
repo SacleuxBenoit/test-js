@@ -74,6 +74,9 @@ console.log(ArrayJoin.join(", ")) // Affiche "Apple, Bananas, Orange"
 const copyArray = ["Name", "Surname", "Username"]
 console.log(copyArray.slice()) // Affiche ["Name", "Surname", "Username"]
 
+const secondCopy = ["Name", "Surname", "Username"]
+console.log(secondCopy.slice(1,3))
+
 // --------------- Retourner un tableau--------------- 
 
 const arrayReverse = [1,2,3,4,5]
