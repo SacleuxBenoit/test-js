@@ -111,3 +111,13 @@ function checkAdult(age){
     return age >= 18
 }
 console.log(age.filter(checkAdult)) // Affiche [22, 95]
+
+// --------------- Vérifier si une valeur est présente dans le tableau --------------- 
+
+const numVerif = [22, 11, 18, 16, 14, 12]
+console.log(numVerif.includes(22)) // Affiche true
+console.log(numVerif.includes(2)) // Affiche false 
+
+const stringVerif = ["Lamb", "Goose", "Deer"]
+console.log(stringVerif.includes("Lamb")) // Affiche true
+console.log(stringVerif.includes("Lambe")) // Affiche false
