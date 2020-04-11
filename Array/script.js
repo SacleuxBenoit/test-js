@@ -1,5 +1,15 @@
 // Test sur les arrays pour mes cheat sheets
 
+// --------------- 1ere syntaxe pour un tableau --------------- 
+
+const firstArray = ["elem1", "elem2", "elem3"]
+console.log(firstArray) // Affiche ["elem1", "elem2", "elem3"]
+
+// --------------- 2iem syntaxe pour un tableau --------------- 
+
+const secondArray = new Array("elem1", "elem2", "elem3")
+console.log(secondArray) // Affiche ["elem1", "elem2", "elem3"]
+
 // --------------- Voir la taille du tableau --------------- 
 
 const number = [2, 2, 10, 287]
