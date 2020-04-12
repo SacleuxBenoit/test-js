@@ -134,7 +134,23 @@ console.log(stringVerif.includes("Lambe")) // Affiche false
 
 // --------------- Boucler dans un tableau --------------- 
 
+// ------------ Boucler avec for ------------
+
 const firstLoop = ["elem1","elem2", "elem3"]
 for(let i =0; i <firstLoop.length;i++){
     console.log(firstLoop[i]) // Affiche "elem1", "elem2", "elem3"
+}
+
+// ------------ Boucler avec for... of ------------
+
+const secondLoop = ["elem1","elem2", "elem3"]
+for(let elem of secondLoop){
+    console.log(elem) // Affiche "elem1", "elem2", "elem3"
+}
+
+// ------------ Boucler avec for... in ------------
+
+const thirdLoop = ["elem1","elem2", "elem3"]
+for(let third in thirdLoop){
+    console.log(thirdLoop[third]) // Affiche "elem1", "elem2", "elem3"
 }
