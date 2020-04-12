@@ -131,3 +131,10 @@ console.log(numVerif.includes(2)) // Affiche false
 const stringVerif = ["Lamb", "Goose", "Deer"]
 console.log(stringVerif.includes("Lamb")) // Affiche true
 console.log(stringVerif.includes("Lambe")) // Affiche false
+
+// --------------- Boucler dans un tableau --------------- 
+
+const firstLoop = ["elem1","elem2", "elem3"]
+for(let i =0; i <firstLoop.length;i++){
+    console.log(firstLoop[i]) // Affiche "elem1", "elem2", "elem3"
+}
