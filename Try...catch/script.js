@@ -7,3 +7,11 @@ try{
 }catch(err){
     console.log("Math.random is not working")
 }
+
+// Exemple de try... catch qui ne fonctionne pas 
+
+try{
+    console.log(Math.rand(1,10))
+}catch(err){
+    console.log("Math.random is not working")
+}
