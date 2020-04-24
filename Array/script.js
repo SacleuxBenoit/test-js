@@ -132,6 +132,14 @@ const stringVerif = ["Lamb", "Goose", "Deer"]
 console.log(stringVerif.includes("Lamb")) // Affiche true
 console.log(stringVerif.includes("Lambe")) // Affiche false
 
+// --------------- Array.reduce --------------- 
+
+let arr = [1, 2, 3, 4, 5];
+
+let sum = arr.reduce((a, b) => a + b);
+
+console.log(sum);
+
 // --------------- Boucler dans un tableau --------------- 
 
 // ------------ Boucler avec for ------------
