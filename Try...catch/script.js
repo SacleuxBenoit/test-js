@@ -27,3 +27,13 @@ try {
     // The error is converted to string as "name: message"
     console.log(err); // ReferenceError: rand is not defined
   }
+
+// Try...catch...finally 
+
+try{
+    console.log(Math.rand(1,10))
+}catch(err){
+    console.log("Math.random is not working")
+}finally{
+console.log(Math.random(1,10))
+}
