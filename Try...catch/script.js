@@ -37,3 +37,11 @@ try{
 }finally{
 console.log(Math.random(1,10))
 }
+
+// Try...finally
+
+try{
+    console.log(Math.rand(1,10))
+}finally{
+console.log(Math.random(1,10))
+}
