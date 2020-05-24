@@ -1,3 +1,5 @@
+// Sans arguments
+
 function conversion(){
     let message= prompt("Entrez la valeur en miles");
     let resultat = message * 1.60934;
@@ -5,3 +7,13 @@ function conversion(){
 }
 
 conversion()
+
+// Avec argument
+
+function convertisseur(change){
+    let miles = prompt("Entrez votre valeur en miles");
+    let result = miles * change;
+    alert(miles + " miles est égal à " + result + " Km")
+}
+
+convertisseur(1.60934)
