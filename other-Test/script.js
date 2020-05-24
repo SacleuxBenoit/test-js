@@ -17,3 +17,12 @@ function convertisseur(change){
 }
 
 convertisseur(1.60934)
+
+// Avec plusieurs arguments 
+
+function convertisseur(miles, change){
+    let result = miles * change;
+    alert(miles + " miles est égal à " + result + " Km")
+}
+
+convertisseur(2,.60934)
