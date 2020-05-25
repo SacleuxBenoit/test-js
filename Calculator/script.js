@@ -1,4 +1,7 @@
 function inser(num){
-    document.form.text.value = document.form.text.value+num
+    document.form.texte.value = document.form.texte.value+num
+}
 
+function equal(){
+    document.form.texte.value = eval(document.form.texte.value)
 }
