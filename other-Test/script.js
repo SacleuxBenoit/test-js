@@ -26,3 +26,14 @@ function convertisseur(miles, change){
 }
 
 convertisseur(2,.60934)
+
+
+// Exemple d'utilisation avec !NOT
+
+let a = 2
+
+if(a != 2){
+    console.log("La valeur est différent de 2")
+}{
+    console.log("La valeur est égal à 2")
+}
