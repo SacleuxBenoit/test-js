@@ -37,3 +37,8 @@ if(a != 2){
 }{
     console.log("La valeur est égal à 2")
 }
+
+// Exemple d'utilisation avec un double NOT 
+
+alert(!!"un stirng non vide")
+alert(!!"")
