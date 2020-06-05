@@ -5,3 +5,9 @@ message.addEventListener('keydown', (e) => {
         console.log("Z à était press")
     }
 })
+
+message.addEventListener('keyup', (e) => {
+    if(e.key == "z"){
+        console.log("Z à était relaché")
+    }
+})
