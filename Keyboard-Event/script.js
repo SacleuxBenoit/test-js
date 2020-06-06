@@ -23,3 +23,11 @@ message.addEventListener('keydown', (e) => {
         console.log("A à était press")
     }
 })
+
+// utilisation de keyup avec .keyCOde
+
+message.addEventListener('keyup', (e) =>{
+    if(e.keyCode == "65"){
+        console.log("A à était relaché")
+    }
+})
