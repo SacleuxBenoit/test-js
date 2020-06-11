@@ -1,8 +1,10 @@
-/*setInterval(() =>{
-    alert("This is a test with 3000 ms")
-}, 3000)*/
+// setTimeout
 
-// ClearInterval
+setTimeout(() =>{
+    alert("this is a test for setTimeout")
+}, 4000)
+
+// ClearTimeout
 
 let content;
 
@@ -13,3 +15,9 @@ function sayHello(){
 function dontSayHello(){
     clearTimeout(content)
 }
+
+// setInterval 
+
+setInterval(() =>{
+    alert("This is a test with 3000 ms")
+}, 3000)
