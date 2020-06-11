@@ -4,7 +4,7 @@
 
 // ClearInterval
 
-const content;
+let content;
 
 function sayHello(){
     content = setTimeout(function(){alert("Hi")}, 4000);
