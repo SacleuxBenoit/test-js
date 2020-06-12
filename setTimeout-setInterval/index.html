@@ -7,9 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="sayHello()">Lancer l'event</button>
-    <button onclick="dontSayHello()">Annuler l'event</button>    
-
+      <button onclick="sayHello()">Lancer l'event</button>
+      <button onclick="dontSayHello()">Annuler l'event</button>
+    <div>
+        <p>
+            <button onclick="Timer()">setInterval</button>
+            <button onclick="PauseTimer()">clearInterval</button>
+        </p>
+        <p id="timer"></p>
+    </div>
+    
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
