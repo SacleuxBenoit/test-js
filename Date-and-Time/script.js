@@ -28,3 +28,8 @@ alert(date.getFullYear())
 alert(date.getMonth())
 
 alert(date.getDate())
+
+// test avec plusieurs arguments
+
+alert(new Date(2020, 0, 1, 0, 0, 0, 0)); // 1 Jan 2020 00:00:00
+alert(new Date(2020, 0, 1)); // la même chose qu'au dessus
