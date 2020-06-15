@@ -9,7 +9,7 @@ alert(Today)
 
 // Changement de la date avec un string en paramètre
 
-let May = new Date("2020-05-11");
+let May = new Date("2020-04-11");
 
 alert(May)
 
@@ -18,3 +18,13 @@ alert(May)
 let Moment = new Date(2020, 04, 12, 21, 00, 00, 00);
 
 alert(Moment)
+
+// Obtenir directement l'année, le mois / la date du jour
+
+let date = new Date()
+
+alert(date.getFullYear())
+
+alert(date.getMonth())
+
+alert(date.getDate())
