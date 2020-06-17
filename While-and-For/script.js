@@ -22,3 +22,11 @@ do{
 while(Country === "USA"){
     alert("Bienvenue en Amérique") // N'affiche pas "Bienvenue en Amérique "
 }
+
+// La boucle For
+
+let arr = [2, 4, 6]
+
+for(let n = 0; n < arr.length; n++){
+    alert(n) // Affiche 0, 1, 2
+}
