@@ -48,3 +48,17 @@ for(; i < arr.length;){
     alert(i++) // Affiche 0,1,2
 }
 
+// for... in
+
+let array = ["this", "is", "a", "test"]
+
+for(let arrays in array){
+    alert(arrays) // Affiche 0,1,2,3
+}
+
+// for... of
+
+let array = ["this", "is", "a", "test"]
+for(let arrays of array){
+    alert(arrays) // Affiche "this", "is", "a", "test"
+}
