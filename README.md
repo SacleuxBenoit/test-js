@@ -2,13 +2,14 @@
 
 J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour expérimenter différentes choses en Javascipt
 
-*   [Array](Array)
+*   [Les tableaux](Array)
 *   [Math](Math)
 *   [Try...catch](Try...catch)
 *   [Special characters](Special-characters)
-*   [Calculator](Calculator)
-*   [Keyboard Event](Keyboard-Event)
-*   [set Timeout and set Interval](setTimeout-setInterval)
-*   [Date and Time](Date-and-Time)
+*   [Calculatrice](Calculator)
+*   [Événement clavier](Keyboard-Event)
+*   [setTimeout et setInterval](setTimeout-setInterval)
+*   [Date et Time](Date-and-Time)
 *   [Algo](Algo)
-*   [Wile and For](While-and-For)
+*   [les boucle Wile et For](While-and-For)
+*   [Les Objets](Objects.md)
