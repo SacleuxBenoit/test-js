@@ -9,3 +9,7 @@ p{
 #testParent{
     border-top: 1px solid black;
 }
+
+#whiteMode{
+    float:right;
+}
