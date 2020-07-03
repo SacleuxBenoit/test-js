@@ -11,3 +11,15 @@ function changeColor(newColor){
     let elem = document.getElementById("divColored");
     elem.style.color = newColor
 }
+
+function darkMode(){
+    let body = document.body;
+    body.style.backgroundColor = "black"
+    body.style.color = "white"
+}
+
+function whiteMode(){
+    let body = document.body;
+    body.style.backgroundColor = "white"
+    body.style.color = "black"
+}
