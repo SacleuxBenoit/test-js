@@ -1,4 +1,4 @@
-// Sans arguments
+// fonction sans arguments
 
 function conversion(){
     let message= prompt("Entrez la valeur en miles");
@@ -8,7 +8,7 @@ function conversion(){
 
 conversion()
 
-// Avec argument
+// fonction avec argument
 
 function convertisseur(change){
     let miles = prompt("Entrez votre valeur en miles");
@@ -18,7 +18,7 @@ function convertisseur(change){
 
 convertisseur(1.60934)
 
-// Avec plusieurs arguments 
+// fonciton avec plusieurs arguments 
 
 function convertisseur(miles, change){
     let result = miles * change;
@@ -42,3 +42,15 @@ if(a != 2){
 
 alert(!!"un stirng non vide")
 alert(!!"")
+
+// Test avec "symbol"
+
+let Symb1 = Symbol(1);
+let Symb2 = Symbol("Copy");
+let Symb3 = Symbol("Copy");
+
+alert(Symbol("Copy") === Symbol("Copy")) // false
+
+alert(Symb2.toString()) // Symbol(Copy)
+
+alert(typeof Symb1) // symbol
