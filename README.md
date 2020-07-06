@@ -12,4 +12,5 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 *   [Date et Time](Date-and-Time)
 *   [Algo](Algo)
 *   [les boucle Wile et For](While-and-For)
-*   [Les Objets](Objects.md)
+*   [Les Objets](Objects)
+*   [Map et Set](Map-and-Set)
