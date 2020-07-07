@@ -36,3 +36,31 @@ console.log(secondMap.clear()); // undefined
 
 console.log(map.size) // 0
 console.log(thirdMap.size) // 2
+
+// SET 
+
+let firstSet = new Set()
+
+// set.add
+
+console.log(firstSet.add("test")) // {"test"}
+console.log(firstSet.add("anotherTest")) // {"test", "anotherTest"}
+
+// set.delete
+
+console.log(firstSet.delete("test")) // true 
+console.log(firstSet.delete("none")) // false
+
+// set.has
+
+console.log(firstSet.has("anotherTest")) // true
+console.log(firstSet.has("test")) // false avec set.delete
+
+// set.clear
+
+console.log(firstSet.clear()) // Undefined
+
+
+// set.size
+
+console.log(firstSet.size) // 0 car on a utilisé .clear() au dessus
