@@ -2,6 +2,7 @@
 let map = new Map();
 let secondMap = new Map();
 let thirdMap = new Map();
+let fourthMap = new Map()
 
 // map.set
 
@@ -37,14 +38,22 @@ console.log(secondMap.clear()); // undefined
 console.log(map.size) // 0
 console.log(thirdMap.size) // 2
 
+// chaining
+
+console.log(fourthMap.set("nom", "Gérard").set("age", "22").set("year", "1998")) // {"nom" => "Gérard", "age" => "22", "year" => "1998"}
+
 // SET 
 
 let firstSet = new Set()
+let secondSet = new Set()
+let thirdSet = new Set()
 
 // set.add
 
 console.log(firstSet.add("test")) // {"test"}
 console.log(firstSet.add("anotherTest")) // {"test", "anotherTest"}
+console.log(secondSet.add("second")) // {"second"}
+console.log(secondSet.add("test")) // {"second", "test"}
 
 // set.delete
 
@@ -64,3 +73,8 @@ console.log(firstSet.clear()) // Undefined
 // set.size
 
 console.log(firstSet.size) // 0 car on a utilisé .clear() au dessus
+console.log(secondSet.size) // 2
+
+// Chaining
+
+console.log(thirdSet.add("this").add("is a test").add("with chaining")) // {"this", "is a test", "with chaining"}
