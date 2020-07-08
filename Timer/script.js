@@ -1,9 +1,10 @@
-let timer = document.getElementById("timer")
-let heures = 0
-let minutes = 0
-let secondes = 0
-let millisecondes = 0
+let timer = document.getElementById("timer");
+let heures = 0;
+let minutes = 0;
+let secondes = 0;
+let millisecondes = 0;
 let interval;
+
 
 function Timer(){
     interval = setInterval(function(){
@@ -23,4 +24,13 @@ function Timer(){
 
 function Pause(){
     clearInterval(interval)
+    secondes == 0
+}
+
+function Reset(){
+    let heures = 0;
+    let minutes = 0;
+    let secondes = 0;
+    let millisecondes = 0;
+    timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
 }
