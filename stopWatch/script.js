@@ -1,4 +1,7 @@
 let timer = document.getElementById("timer");
+let start = document.getElementById("start");
+let pause = document.getElementById("pause");
+let finish = document.getElementById("finish");
 let heures = 0;
 let minutes = 0;
 let secondes = 0;
@@ -33,5 +36,13 @@ function Reset(){
     secondes = 0;
     millisecondes = 0;
 timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
-
 }
+
+start.addEventListener('click', function(event) {
+    start.disabled = !start.disabled;
+});
+
+pause.addEventListener('click', function(event){
+    start.disabled = false;
+});
+
