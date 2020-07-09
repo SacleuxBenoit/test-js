@@ -5,6 +5,7 @@ let secondes = 0;
 let millisecondes = 0;
 let interval;
 
+timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
 
 function Timer(){
     interval = setInterval(function(){
