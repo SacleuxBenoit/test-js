@@ -24,13 +24,13 @@ function Timer(){
 
 function Pause(){
     clearInterval(interval)
-    secondes == 0
 }
 
 function Reset(){
-    let heures = 0;
-    let minutes = 0;
-    let secondes = 0;
-    let millisecondes = 0;
-    timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+    heures = 0;
+    minutes = 0;
+    secondes = 0;
+    millisecondes = 0;
+timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+
 }
