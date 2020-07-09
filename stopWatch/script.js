@@ -36,6 +36,7 @@ function Reset(){
     secondes = 0;
     millisecondes = 0;
 timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+clearInterval(interval)
 }
 
 start.addEventListener('click', function(event) {
@@ -46,3 +47,6 @@ pause.addEventListener('click', function(event){
     start.disabled = false;
 });
 
+finish.addEventListener('click', function(event){
+    start.disabled = false
+})
