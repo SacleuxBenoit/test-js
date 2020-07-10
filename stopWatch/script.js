@@ -7,6 +7,7 @@ let minutes = 0;
 let secondes = 0;
 let millisecondes = 0;
 let interval;
+let i = 0;
 
 timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
 
@@ -56,8 +57,9 @@ pause.addEventListener('click', () =>{
 });
 
 pause.addEventListener('click', () => {
+    
 let newDiv = document.createElement("DIV")
-let save =  document.createTextNode(heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
+let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
 newDiv.appendChild(save)
 document.body.appendChild(newDiv)
 })
@@ -69,3 +71,4 @@ finish.addEventListener('click', () =>{
         start.textContent = "Recommencer le chrono"
     }
 })
+
