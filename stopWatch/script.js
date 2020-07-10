@@ -58,10 +58,10 @@ pause.addEventListener('click', () =>{
 
 pause.addEventListener('click', () => {
     
-let newDiv = document.createElement("DIV")
+let newSpan = document.createElement("span")
 let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
-newDiv.appendChild(save)
-document.body.appendChild(newDiv)
+newSpan.appendChild(save)
+document.body.appendChild(newSpan)
 })
 
 finish.addEventListener('click', () =>{
