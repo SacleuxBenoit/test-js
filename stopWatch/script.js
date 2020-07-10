@@ -41,14 +41,17 @@ clearInterval(interval)
 
 start.addEventListener('click', function() {
     start.disabled = !start.disabled;
+    pause.disabled = false
 });
 
 pause.addEventListener('click', function(){
     start.disabled = false;
+    pause.disabled = true;
 });
 
 finish.addEventListener('click', function(){
-    start.disabled = false
+    start.disabled = false;
+    pause.disabled = true
 })
 
 pause.addEventListener('click', function(){
