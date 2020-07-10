@@ -10,7 +10,7 @@ let interval;
 
 timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
 
-function Timer(){
+function Start(){
     interval = setInterval(function(){
         timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
         millisecondes += 1;
@@ -39,24 +39,33 @@ timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " s
 clearInterval(interval)
 }
 
-start.addEventListener('click', function() {
+start.addEventListener('click', (event) =>{
     start.disabled = !start.disabled;
-    pause.disabled = false
+    if(pause.disabled = true){
+        start.textContent = "Commencer le chrono"
+    }
+    pause.disabled = false;
 });
 
-pause.addEventListener('click', function(){
+pause.addEventListener('click', () =>{
     start.disabled = false;
     pause.disabled = true;
+    if(pause.disabled = true){
+        start.textContent = "Reprendre"
+    }
 });
 
-finish.addEventListener('click', function(){
-    start.disabled = false;
-    pause.disabled = true
-})
-
-pause.addEventListener('click', function(){
+pause.addEventListener('click', () => {
 let newDiv = document.createElement("DIV")
-let save = document.createTextNode(heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
+let save =  document.createTextNode(heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
 newDiv.appendChild(save)
 document.body.appendChild(newDiv)
+})
+
+finish.addEventListener('click', () =>{
+    start.disabled = false;
+    pause.disabled = true
+    if(pause.disabled = true){
+        start.textContent = "Recommencer le chrono"
+    }
 })
