@@ -39,14 +39,21 @@ timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " s
 clearInterval(interval)
 }
 
-start.addEventListener('click', function(event) {
+start.addEventListener('click', function() {
     start.disabled = !start.disabled;
 });
 
-pause.addEventListener('click', function(event){
+pause.addEventListener('click', function(){
     start.disabled = false;
 });
 
-finish.addEventListener('click', function(event){
+finish.addEventListener('click', function(){
     start.disabled = false
+})
+
+pause.addEventListener('click', function(){
+let newDiv = document.createElement("DIV")
+let save = document.createTextNode(heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
+newDiv.appendChild(save)
+document.body.appendChild(newDiv)
 })
