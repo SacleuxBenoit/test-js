@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: aqua;
+}
+
+h1{
+    padding-top: 18%;
+    font-size: 4em;
+}
+
+#textCountdown{
+    font-size: 2em;
+}
