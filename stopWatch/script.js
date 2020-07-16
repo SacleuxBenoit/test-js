@@ -57,7 +57,6 @@ pause.addEventListener('click', () =>{
 });
 
 pause.addEventListener('click', () => {
-    
 let newSpan = document.createElement("span")
 let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
 newSpan.appendChild(save)
@@ -71,4 +70,3 @@ finish.addEventListener('click', () =>{
         start.textContent = "Recommencer le chrono"
     }
 })
-
