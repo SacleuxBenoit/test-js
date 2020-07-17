@@ -11,16 +11,35 @@ console.log(random)
 
 let question = "Entrez votre Number"
 let answer;
+let i = 0;
 
-do {
+/*do {
     answer = prompt(question);
 
     if (answer < random) {
         alert("Votre nombres est inférieur");
+        i++
     }
 
     else {
         alert("Votre nombre est supérieur");
+        i++
     }
 
 } while (answer != random)
+*/
+
+while(answer != random){
+answer = prompt(question);
+
+if (answer < random) {
+    alert("Votre nombres est inférieur");
+    i++
+}
+
+else {
+    alert("Votre nombre est supérieur");
+    i++
+}
+
+}
