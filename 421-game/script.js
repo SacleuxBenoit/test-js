@@ -12,20 +12,35 @@ function RandomBtn3() {
 }
 
 function everyThing(){
-    RandomBtn1();RandomBtn2();RandomBtn3()
+    RandomBtn1();
+    RandomBtn2();
+    RandomBtn3()
     console.log(newarr = [...arrBtn1,...arrBtn2,...arrBtn3,])
-    
-        if(newarr[1] == 4){
-            [newarr[0], newarr[1]] = [newarr[1], newarr[0]]
-            console.log(newarr)
-        }
-
-        if(newarr[2] == 4){
-            [newarr[0], newarr[2]] = [newarr[2], newarr[0]]
-            console.log(newarr)
-        }
+    sort();
 }
 
+function sort(){
+
+    if(newarr[1] == 4){
+        [newarr[0], newarr[1]] = [newarr[1], newarr[0]]
+        console.log(newarr)
+    }
+
+    if(newarr[2] == 4){
+        [newarr[0], newarr[2]] = [newarr[2], newarr[0]]
+        console.log(newarr)
+    }
+
+    if(newarr[0] == 2){
+        [newarr[0], newarr[1]] = [newarr[1], newarr[0]]
+        console.log(newarr)
+    }
+
+    if(newarr[2] == 2){
+        [newarr[1], newarr[2]] = [newarr[2], newarr[1]]
+        console.log(newarr)
+    }
+}
 
 /*function teste(){
     newarr = [...arr1,...arr2,...arr3,]
