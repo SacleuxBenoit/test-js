@@ -17,6 +17,7 @@ function everyThing(){
     RandomBtn3()
     console.log(newarr = [...arrBtn1,...arrBtn2,...arrBtn3,])
     sort();
+    winner()
 }
 
 function sort(){
@@ -39,6 +40,12 @@ function sort(){
     if(newarr[2] == 2){
         [newarr[1], newarr[2]] = [newarr[2], newarr[1]]
         console.log(newarr)
+    }
+}
+
+function winner(){
+    if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
+        alert("vous avez gagné !")
     }
 }
 
