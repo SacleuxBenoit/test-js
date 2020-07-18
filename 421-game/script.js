@@ -1,15 +1,53 @@
+function RandomBtn1() {
+    arrBtn1 = [Math.floor((Math.random() * 6) + 1)]
+    console.log(arrBtn1)
+}
+function RandomBtn2() {
+    arrBtn2 = [Math.floor((Math.random() * 6) + 1)]
+    console.log(arrBtn2)
+}
+function RandomBtn3() {
+    arrBtn3 = [Math.floor((Math.random() * 6) + 1)]
+    console.log(arrBtn3)
+}
+
+function everyThing(){
+    RandomBtn1();RandomBtn2();RandomBtn3()
+    console.log(newarr = [...arrBtn1,...arrBtn2,...arrBtn3,])
+    if(newarr[0] == 4){
+        alert("4")
+    }
+}
+
+
+/*function teste(){
+    newarr = [...arr1,...arr2,...arr3,]
+    console.log(newarr)
+}
+
 function firstButton(){
-    console.log(Math.floor(Math.random() * (6 - 1 + 1)) + 1)
+    firstThrow = RandomInt(1, 6)
+    console.log(firstThrow);
 }
 
 function secondButton(){
-    console.log(Math.floor(Math.random() * (6 - 1 + 1)) + 1)
-}
+    secondThrow = RandomInt(1, 6)
+   }
 
 function thirdButton(){
-    console.log(Math.floor(Math.random() * (6 - 1 + 1)) + 1)
-}
+    thirdThrow = RandomInt(1, 6)
+   }
 
 function everyButton(){
-    firstButton(); secondButton();thirdButton()
+    firstButton();
+    secondButton();
+    thirdButton();
 }
+
+if(firstButton() == 4){
+    alert("ok")
+}
+
+console.log(firstButton())
+
+console.log(arr)*/
