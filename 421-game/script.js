@@ -75,34 +75,3 @@ function disableButton(){
     }
 
 }
-/*function teste(){
-    newarr = [...arr1,...arr2,...arr3,]
-    console.log(newarr)
-}
-
-function firstButton(){
-    firstThrow = RandomInt(1, 6)
-    console.log(firstThrow);
-}
-
-function secondButton(){
-    secondThrow = RandomInt(1, 6)
-   }
-
-function thirdButton(){
-    thirdThrow = RandomInt(1, 6)
-   }
-
-function everyButton(){
-    firstButton();
-    secondButton();
-    thirdButton();
-}
-
-if(firstButton() == 4){
-    alert("ok")
-}
-
-console.log(firstButton())
-
-console.log(arr)*/
