@@ -1,3 +1,7 @@
+let firstThrow = document.getElementById("firstThrow")
+let secondThrow = document.getElementById("secondThrow")
+let thirdThrow = document.getElementById("thirdThrow")
+
 function RandomBtn1() {
     arrBtn1 = [Math.floor((Math.random() * 6) + 1)]
     console.log(arrBtn1)
@@ -17,7 +21,8 @@ function everyThing(){
     RandomBtn3()
     console.log(newarr = [...arrBtn1,...arrBtn2,...arrBtn3,])
     sort();
-    winner()
+    winner();
+    disableButton()
 }
 
 function sort(){
@@ -49,6 +54,27 @@ function winner(){
     }
 }
 
+function disableButton(){
+
+    if(newarr[0] == 4){
+        firstThrow.disabled = true
+    }else{
+        firstThrow.disabled = false
+    }
+
+    if(newarr[1] == 2){
+        secondThrow.disabled = true
+    }else{
+        secondThrow.disabled = false
+    }
+
+    if(newarr[2] == 1){
+        thirdThrow.disabled = true
+    }else{
+        thirdThrow.disabled = false
+    }
+
+}
 /*function teste(){
     newarr = [...arr1,...arr2,...arr3,]
     console.log(newarr)
