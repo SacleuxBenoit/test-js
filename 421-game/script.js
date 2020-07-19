@@ -1,6 +1,7 @@
 let firstThrow = document.getElementById("firstThrow");
 let secondThrow = document.getElementById("secondThrow");
 let thirdThrow = document.getElementById("thirdThrow");
+let bigThrow = document.getElementById("bigThrow");
 let result = document.getElementById("result");
 
 function RandomBtn1() {
@@ -52,7 +53,10 @@ function sort(){
 
 function winner(){
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
-        alert("vous avez gagné !")
+        result.style.color = "blue";
+        result.textContent = "vous avez gagné !";
+        disableButton();
+
     }
 }
 
@@ -74,6 +78,10 @@ function disableButton(){
         thirdThrow.disabled = true
     }else{
         thirdThrow.disabled = false
+    }
+
+    if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
+        bigThrow.disabled = true
     }
 
 }
