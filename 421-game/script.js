@@ -89,3 +89,12 @@ function disableButton(){
 function showRandom(){
     result.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2]
 }
+
+function reset(){
+    result.textContent = " "; 
+    result.style.color = "black";
+    firstThrow.disabled = false;
+    secondThrow.disabled = false;
+    thirdThrow.disabled = false;
+    bigThrow.disabled = false
+}
