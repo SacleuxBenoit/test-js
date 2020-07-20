@@ -3,6 +3,7 @@ let secondThrow = document.getElementById("secondThrow");
 let thirdThrow = document.getElementById("thirdThrow");
 let bigThrow = document.getElementById("bigThrow");
 let result = document.getElementById("result");
+let roll = document.getElementById("roll");
 let coups = 1;
 
 function RandomBtn1() {
@@ -92,9 +93,9 @@ function disableButton(){
 }
 
 function showRandom(){
-    result.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2]
+    roll.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2]
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
-        result.textContent = "vous avez gagné en " + coups + " coups"
+        result.textContent = "vous avez gagné en " + coups + " coups !"
     }
 }
 
