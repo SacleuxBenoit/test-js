@@ -3,6 +3,7 @@ let secondThrow = document.getElementById("secondThrow");
 let thirdThrow = document.getElementById("thirdThrow");
 let bigThrow = document.getElementById("bigThrow");
 let result = document.getElementById("result");
+let coups = 1;
 
 function RandomBtn1() {
     arrBtn1 = [Math.floor((Math.random() * 6) + 1)];
@@ -26,6 +27,7 @@ function everyThing(){
     disableButton();
     showRandom();
     newArray();
+    console.log(++coups)
 }
 
 function newArray(){
@@ -59,9 +61,7 @@ function sort(){
 function winner(){
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
         result.style.color = "blue";
-        result.textContent = "vous avez gagné !";
         disableButton();
-
     }
 }
 
@@ -93,6 +93,9 @@ function disableButton(){
 
 function showRandom(){
     result.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2]
+    if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
+        result.textContent = "vous avez gagné en " + coups + " coups"
+    }
 }
 
 function reset(){
@@ -102,4 +105,5 @@ function reset(){
     secondThrow.disabled = false;
     thirdThrow.disabled = false;
     bigThrow.disabled = false;
+    coups = 1;
 }
