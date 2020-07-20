@@ -22,3 +22,5 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 
 *   [Calculatrice](Calculator)
 *   [stopWatch](stopWatch)
+*   [Le juste nombre](Le-juste-nombre)
+*   [421](421-game)
