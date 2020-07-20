@@ -8,21 +8,31 @@
     <title>421 game</title>
 </head>
 <body>
-    <h1>
-        421 game
-    </h1>
-
+    <header>
+        <h1>
+            Jeu du 421
+        </h1>
+    </header>
+    <p> Le but du jeu est assez simple, il vous suffit de faire 421 avec le moins de coups possible</p>
     <div>
-        <button id="firstThrow" onclick="RandomBtn1()">Lancer 1</button>
-        <button id="secondThrow" onclick="RandomBtn2()">Lancer 2</button>
-        <button id="thirdThrow" onclick="RandomBtn3()">Lancer 3</button>
-    </div>
-    <p><button id ="bigThrow" onclick="everyThing()">3 lancer en même temps</button></p>
-    <p id="roll"> </p>
+        <p>
+            <button id="firstThrow" onclick="RandomBtn1()">Lancer 1</button>
+            <button id="secondThrow" onclick="RandomBtn2()">Lancer 2</button>
+            <button id="thirdThrow" onclick="RandomBtn3()">Lancer 3</button>
+        </p>
 
-    <div id="result"></div>
+        <p>
+            <button id ="bigThrow" onclick="everyThing()">3 lancer en même temps</button>
+        </p>
+
+    </div>
+    <p id ="roll"></p>
+    <p id="result"></p>
 
     <button onclick="reset()">Reset</button>
+    <footer>
+        Ceci est réalisé dans le cadre d'un exercice perso
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
