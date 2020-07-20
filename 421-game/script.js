@@ -101,6 +101,7 @@ function showRandom(){
 
 function reset(){
     result.textContent = " "; 
+    roll.textContent = " "
     result.style.color = "black";
     firstThrow.disabled = false;
     secondThrow.disabled = false;
