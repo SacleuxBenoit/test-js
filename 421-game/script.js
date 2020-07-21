@@ -68,23 +68,11 @@ function winner(){
 
 function disableButton(){
 
-    if(newarr[0] == 4){
-        firstThrow.disabled = true
-    }else{
-        firstThrow.disabled = false
-    }
+    newarr[0] == 4 ? firstThrow.disabled = true : firstThrow.disabled = false
+    
+    newarr[1] == 2 ? secondThrow.disabled = true : secondThrow.disabled = false
 
-    if(newarr[1] == 2){
-        secondThrow.disabled = true
-    }else{
-        secondThrow.disabled = false
-    }
-
-    if(newarr[2] == 1){
-        thirdThrow.disabled = true
-    }else{
-        thirdThrow.disabled = false
-    }
+    newarr[2] == 1 ? thirdThrow.disabled = true : thirdThrow.disabled = false
 
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
         bigThrow.disabled = true
