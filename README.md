@@ -18,9 +18,15 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 *   [autre test](other-Test)
 *   [DOM](DOM)
 
+## Algo
+
+*   [Bubble sort](Algo/Bubble-Sort)
+*   [Insertion sort](Algo/Insertion-Sort)
+
 ## partie mini projet
 
 *   [Calculatrice](Calculator)
 *   [stopWatch](stopWatch)
 *   [Le juste nombre](Le-juste-nombre)
 *   [421](421-game)
+*   [Converisseur](Converters)
