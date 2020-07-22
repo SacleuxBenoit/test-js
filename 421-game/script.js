@@ -28,7 +28,7 @@ function everyThing(){
     disableButton();
     showRandom();
     newArray();
-    console.log(++coups)
+    coups++
 }
 
 function newArray(){
@@ -68,28 +68,28 @@ function winner(){
 
 function disableButton(){
 
-    newarr[0] == 4 ? firstThrow.disabled = true : firstThrow.disabled = false
+    newarr[0] == 4 ? firstThrow.disabled = true : firstThrow.disabled = false;
     
-    newarr[1] == 2 ? secondThrow.disabled = true : secondThrow.disabled = false
+    newarr[1] == 2 ? secondThrow.disabled = true : secondThrow.disabled = false;
 
-    newarr[2] == 1 ? thirdThrow.disabled = true : thirdThrow.disabled = false
+    newarr[2] == 1 ? thirdThrow.disabled = true : thirdThrow.disabled = false;
 
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
-        bigThrow.disabled = true
+        bigThrow.disabled = true;
     }
 
 }
 
 function showRandom(){
-    roll.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2]
+    roll.textContent =  newarr[0] + " " + newarr[1] + " " + newarr[2];
     if(newarr[0] == 4 && newarr[1] == 2 && newarr[2] == 1){
-        result.textContent = "vous avez gagné en " + coups + " coups !"
+        result.textContent = "vous avez gagné en " + coups + " coups !";
     }
 }
 
 function reset(){
     result.textContent = " "; 
-    roll.textContent = " "
+    roll.textContent = " ";
     result.style.color = "black";
     firstThrow.disabled = false;
     secondThrow.disabled = false;
