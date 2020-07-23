@@ -21,3 +21,26 @@ function getFahrenheit(){
     resultFahrenheit = document.getElementById("resultFahrenheit")
     resultFahrenheit.textContent = CtoF + " degrés Celsius équivaut à " + (CtoF * 1.8 + 32)  + " degrés Fahrenheit"
 }
+
+let SelectForm = document.getElementById('SelectForm').value
+ 
+if(SelectForm == "ConvertKmToMiles"){
+    DivCelsiusToFahrenheit.textContent = " "
+    DivMilesToKm.textContent = " "
+    DivFahrenheitToCelsius.textContent = " "
+}
+else if(SelectForm == "ConvertMilesToKm"){
+    DivCelsiusToFahrenheit.textContent = " "
+    DivKmToMiles.textContent = " "
+    DivFahrenheitToCelsius.textContent = " "
+}
+else if(SelectForm == "ConvertFahrenheitToCelsius"){
+    DivCelsiusToFahrenheit.textContent = " "
+    DivMilesToKm.textContent = " "
+    DivKmToMiles.textContent = " "
+}
+else if(SelectForm == "ConvertCelsiusToFahrenheit"){
+    DivFahrenheitToCelsius.textContent = " "
+    DivMilesToKm.textContent = " "
+    DivKmToMiles.textContent = " "
+}
