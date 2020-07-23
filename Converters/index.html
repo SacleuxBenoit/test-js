@@ -7,11 +7,20 @@
     <title>Converters</title>
 </head>
 <body>
+    <form>
+        <p>
+            <label>Que voulez-vous convertir ?</label><br />
+            <select id="SelectForm">
+                    <option value="ConvertKmToMiles" >Km to Miles</option>
+                    <option value="ConvertMilesToKm">Miles to Km</option>
+                    <option value="ConvertFahrenheitToCelsius" selected>Fahrenheit to Celsius</option>
+                    <option value="ConvertCelsiusToFahrenheit">Celsius to Fahrenheit</option>
+            </select>
+        </p>
+     </form>
                     <!-- KM TO MILES -->
-
+    <div id="DivKmToMiles">
     <h1> Convertir des Km en Miles</h1>
-
-    <div>
         <form>
             <input type="number" id="KmToMiles">
         </form>
@@ -20,10 +29,8 @@
     </div>
 
                     <!-- Miles TO MILES -->
-                    
+    <div id="DivMilesToKm">           
     <h1> Convertir des Miles en Km</h1>
-
-    <div>
         <form>
             <input type="number" id="MilesToKm"> 
         </form>   
@@ -31,11 +38,9 @@
             <p id="resultKm"> </p>  
     </div>
                     <!-- Fahrenheit to Celsius -->
-                    
+    <div id="DivFahrenheitToCelsius">                  
     <h1> Convertir des Fahrenheit en Celsius </h1>
-
-    <div>
-        <form>
+     <form>
             <input type="number" id="FtoC"> 
         </form>   
             <button onclick="getCelsius()">Envoyer</button>
@@ -43,17 +48,14 @@
     </div>
 
                     <!-- Celsius to Fahrenheit -->
-
+    <div id="DivCelsiusToFahrenheit">
     <h1> Convertir des Celsius en Fahrenheit </h1>
-
-    <div>
         <form>
             <input type="number" id="CtoF"> 
         </form>   
             <button onclick="getFahrenheit()">Envoyer</button>
             <p id="resultFahrenheit"> </p>  
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
