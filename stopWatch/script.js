@@ -11,7 +11,7 @@ let i = 0;
 
 timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
 
-function Start(){
+start.addEventListener('click', () =>{
     interval = setInterval(function(){
         timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
         millisecondes += 1;
@@ -25,22 +25,7 @@ function Start(){
             heures ++;
             minutes = 0;
         }
-     },100)}
-
-function Pause(){
-    clearInterval(interval)
-}
-
-function Reset(){
-    heures = 0;
-    minutes = 0;
-    secondes = 0;
-    millisecondes = 0;
-timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
-clearInterval(interval)
-}
-
-start.addEventListener('click', (event) =>{
+     },100)
     start.disabled = !start.disabled;
     if(pause.disabled = true){
         start.textContent = "Commencer le chrono"
@@ -49,24 +34,30 @@ start.addEventListener('click', (event) =>{
 });
 
 pause.addEventListener('click', () =>{
+    let newSpan = document.createElement("span")
+    let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
     start.disabled = false;
     pause.disabled = true;
+    newSpan.appendChild(save)
+    document.body.appendChild(newSpan)
+    clearInterval(interval)
+    
     if(pause.disabled = true){
         start.textContent = "Reprendre"
     }
 });
 
-pause.addEventListener('click', () => {
-let newSpan = document.createElement("span")
-let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
-newSpan.appendChild(save)
-document.body.appendChild(newSpan)
-})
-
 finish.addEventListener('click', () =>{
+    heures = 0;
+    minutes = 0;
+    secondes = 0;
+    millisecondes = 0;
+    timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
     start.disabled = false;
     pause.disabled = true
+    clearInterval(interval)
+
     if(pause.disabled = true){
-        start.textContent = "Recommencer le chrono"
+        start.textContent = "Recommencer le chrono"   
     }
 })
