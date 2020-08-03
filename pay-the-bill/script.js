@@ -7,17 +7,13 @@ let labelPeople = document.getElementById("labelPeople");
 let labelTVA = document.getElementById("labelTVA");
 
 function send(){
-
-    let totalTVA = price.value * tva.value / 100
-    let total = price.value * 1 + totalTVA * 1
-    let totalPeople = total / people.value
-    result.textContent = "Le coût est de " + totalPeople + " euros par personne."
+    total()
     checkAll()
 }
 
 function checkPeople(){
 
-    if(people.value == 0){
+    if(people.value <= 0){
         result.textContent = "Veuillez indiquer le nombre de personne."
         labelPeople.style.color = "red"
     }else{
@@ -26,7 +22,7 @@ function checkPeople(){
 }
 
 function checkTVA(){
-    if(tva.value == 0){
+    if(tva.value <= 0){
         result.textContent = "Veuillez indiquer la TVA"
         labelTVA.style.color = "red"
     }else{
@@ -35,12 +31,19 @@ function checkTVA(){
 }
 
 function checkPrice(){
-    if(price.value == 0){
+    if(price.value <= 0){
         result.textContent = "Veuillez indiquez le prix"
         labelPrice.style.color = "red"
     }else{
         labelPrice.style.color = "black"
     }
+}
+
+function total(){
+    let totalTVA = price.value * tva.value / 100
+    let total = price.value * 1 + totalTVA * 1
+    let totalPeople = total / people.value
+    result.textContent = "Le coût est de " + totalPeople + " euros par personne."
 }
 
 function checkAll(){
