@@ -4,18 +4,18 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 
 ## partie test pour les cheat sheets 
 
-*   [Les tableaux](Array)
+*   [Array](Array)
 *   [Math](Math)
 *   [Try...catch](Try...catch)
 *   [Special characters](Special-characters)
-*   [Événement clavier](Keyboard-Event)
-*   [setTimeout et setInterval](setTimeout-setInterval)
-*   [Date et Time](Date-and-Time)
+*   [Keyboard Event](Keyboard-Event)
+*   [setTimeout and setInterval](setTimeout-setInterval)
+*   [Date and Time](Date-and-Time)
 *   [Algo](Algo)
-*   [les boucle Wile et For](While-and-For)
-*   [Les Objets](Objects)
-*   [Map et Set](Map-and-Set)
-*   [autre test](other-Test)
+*   [the loop While and for](While-and-For)
+*   [Objects](Objects)
+*   [Map and Set](Map-and-Set)
+*   [other test](other-Test)
 *   [DOM](DOM)
 
 ## Algo
@@ -25,9 +25,10 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 
 ## partie mini projet
 
-*   [Calculatrice](Calculator)
+*   [Calculator](Calculator)
 *   [stopWatch](stopWatch)
 *   [Le juste nombre](Le-juste-nombre)
 *   [421](421-game)
-*   [Converisseur](Converters)
+*   [Converters](Converters)
 *   [Multiplication-table](multiplication-table)
+*   [Pay the bill](pay-the-bill)
