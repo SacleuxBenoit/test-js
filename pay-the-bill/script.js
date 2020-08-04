@@ -11,28 +11,32 @@ function send(){
     checkAll()
 }
 
-function checkPrice(){
-    if(price.value <= 0){
-        result.textContent = "Veuillez indiquez le prix"
-        labelPrice.style.color = "red"
+function checkPeople(){
+
+    if(people.value <= 0){
+        result.textContent = "Veuillez indiquer le nombre de personne."
+        labelPeople.style.color = "red"
+    }else{
+        labelPeople.style.color = "black"
     }
-    else labelPrice.style.color = "black"    
 }
 
 function checkTVA(){
     if(tva.value <= 0){
         result.textContent = "Veuillez indiquer la TVA"
         labelTVA.style.color = "red"
+    }else{
+        labelTVA.style.color = "black"
     }
-    else labelTVA.style.color = "black"
 }
 
-function checkPeople(){
-    if(people.value <= 0){
-        result.textContent = "Veuillez indiquer le nombre de personne."
-        labelPeople.style.color = "red"
+function checkPrice(){
+    if(price.value <= 0){
+        result.textContent = "Veuillez indiquez le prix"
+        labelPrice.style.color = "red"
+    }else{
+        labelPrice.style.color = "black"
     }
-    else labelPeople.style.color = "black"
 }
 
 function total(){
