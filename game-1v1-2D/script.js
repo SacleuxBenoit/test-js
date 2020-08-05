@@ -14,21 +14,27 @@ function quickAttack(){
     let random = Math.floor((Math.random() * (max - min) + min))
     let currentLife = lifeP1 -= random
     showLifeP1.textContent = currentLife + " %"
+    console.log(currentLife)
 
 }
 
 function slowAttack(){
     let min = 1;
     let max = 20;
-    let random = (Math.floor((Math.random() * (max - min) + min)))
-
+    let random = Math.floor((Math.random() * (max - min) + min))
+    let currentLife = lifeP1 -= random
+    showLifeP1.textContent = currentLife + " %"
+    console.log(currentLife)
 
 }
 
 function heal(){
-    let min = 8;
-    let max = 11;
-    console.log(Math.floor((Math.random() * (max - min) + min)))
+    let min = 7;
+    let max = 10;
+    let random = Math.floor((Math.random() * (max - min) + min))
+    let currentLife = lifeP1 += random
+    showLifeP1.textContent = currentLife + " %"
+    console.log(currentLife)
 }
 
 
