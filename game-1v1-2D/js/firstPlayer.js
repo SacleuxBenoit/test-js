@@ -4,10 +4,16 @@ let disabledHealP1 = document.getElementById("disabledHealP1");
 
 function reduceLifeP1(min, max){
     let random = Math.floor((Math.random() * (max - min) + min));
-    let currentLife = lifeP2 -= random;
-    showLifeP2.textContent = currentLife + " %";
+    let currentLifeP2 = lifeP2 -= random;
+    showLifeP2.textContent = currentLifeP2 + " %";
 
-    if(currentLife <= 0){
+    if(currentLifeP2 <= 75){
+        showLifeP2.style.background = "orange"
+    }
+    if(currentLifeP2 <= 25){
+        showLifeP2.style.background = "red"
+    }
+    if(currentLifeP2 <= 0){
         result.textContent = "Le joueur 1 à gagné.";
         disabledQuickAttackP1.disabled = true;
         disabledSlowAttackP1.disabled = true;
@@ -28,7 +34,7 @@ function healP1(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
-    let currentLife = lifeP1 += random;
-    showLifeP1.textContent = currentLife + " %";
-    console.log(currentLife);
+    let currentLifeP1 = lifeP1 += random;
+    showLifeP1.textContent = currentLifeP1 + " %";
+    console.log(currentLifeP1);
 }
