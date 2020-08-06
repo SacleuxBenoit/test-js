@@ -12,6 +12,7 @@ function reduceLifeP2(min, max){
         disabledQuickAttackP2.disabled = true;
         disabledSlowAttackP2.disabled = true;
         disabledHealP2.disabled = true;
+        showLifeP1.textContent = " 0 %"
     }
 }
 
