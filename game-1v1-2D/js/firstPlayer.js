@@ -1,9 +1,18 @@
+let disabledQuickAttackP1 = document.getElementById("disabledQuickAttackP1");
+let disabledSlowAttackP1 = document.getElementById("disabledSlowAttackP1");
+let disabledHealP1 = document.getElementById("disabledHealP1");
+
 function reduceLifeP1(min, max){
     let random = Math.floor((Math.random() * (max - min) + min));
-    let currentLife = lifeP1 -= random;
-    showLifeP1.textContent = currentLife + " %";
-    console.log(currentLife);
+    let currentLife = lifeP2 -= random;
+    showLifeP2.textContent = currentLife + " %";
 
+    if(currentLife <= 0){
+        result.textContent = "Le joueur 1 à gagné.";
+        disabledQuickAttackP1.disabled = true;
+        disabledSlowAttackP1.disabled = true;
+        disabledHealP1.disabled = true;
+    }
 }
 
 function quickAttackP1(){
@@ -22,4 +31,3 @@ function healP1(){
     showLifeP1.textContent = currentLife + " %";
     console.log(currentLife);
 }
-
