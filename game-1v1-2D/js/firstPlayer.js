@@ -8,10 +8,11 @@ function reduceLifeP1(min, max){
     let currentLifeP2 = lifeP2 -= random;
     showLifeP2.textContent = currentLifeP2 + " %";
 
-    if(currentLifeP2 <= 75){
+    if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
         showLifeP2.style.background = "orange"
+        console.log(currentLifeP2)
     }
-    if(currentLifeP2 <= 25){
+    if(currentLifeP2 <= 25 && currentLifeP2 >= 1){
         showLifeP2.style.background = "red"
         buttonExecution.disabled = false
     }
@@ -23,6 +24,7 @@ function reduceLifeP1(min, max){
         disabledQuickAttackP2.disabled = true;
         disabledSlowAttackP2.disabled = true;
         disabledHealP2.disabled = true;
+        buttonExecution.disabled = true;
         showLifeP2.textContent = " 0 %"
     }
 }
@@ -45,4 +47,8 @@ function healP1(){
     let random = Math.floor((Math.random() * (max - min) + min));
     let currentLifeP1 = lifeP1 += random;
     showLifeP1.textContent = currentLifeP1 + " %";
+
+    if(currentLifeP1 >= 100){
+        disabledHealP1.disabled = true
+    }
 }
