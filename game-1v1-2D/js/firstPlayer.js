@@ -1,5 +1,6 @@
 let disabledQuickAttackP1 = document.getElementById("disabledQuickAttackP1");
 let disabledSlowAttackP1 = document.getElementById("disabledSlowAttackP1");
+let buttonExecution = document.getElementById("buttonExecution");
 let disabledHealP1 = document.getElementById("disabledHealP1");
 
 function reduceLifeP1(min, max){
@@ -12,6 +13,7 @@ function reduceLifeP1(min, max){
     }
     if(currentLifeP2 <= 25){
         showLifeP2.style.background = "red"
+        buttonExecution.disabled = false
     }
     if(currentLifeP2 <= 0){
         result.textContent = "Le joueur 1 à gagné.";
@@ -33,11 +35,14 @@ function slowAttackP1(){
     reduceLifeP1(1, 20);
 }
 
+function exec(){
+    reduceLifeP1(25,25)
+}
+
 function healP1(){
     let min = 7;
     let max = 10;
     let random = Math.floor((Math.random() * (max - min) + min));
     let currentLifeP1 = lifeP1 += random;
     showLifeP1.textContent = currentLifeP1 + " %";
-    console.log(currentLifeP1);
 }
