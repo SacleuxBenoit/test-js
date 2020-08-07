@@ -40,4 +40,8 @@ function healP2(){
     let currentLifeP2 = lifeP2 += random;
     showLifeP2.textContent = currentLifeP2 + " %";
     console.log(currentLifeP2);
+
+    if(currentLifeP2 >= 100){
+        disabledHealP2.disabled = true
+    }
 }
