@@ -20,6 +20,7 @@ function resetP1(){
     lifeP2 = 100;
     showLifeP2.textContent = 100 + " %";
     showLifeP2.style.background = "greenyellow";
+    buttonExecution.disabled = true
 }
 
 function resetP2(){
