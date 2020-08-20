@@ -52,10 +52,14 @@ finish.addEventListener('click', () =>{
     minutes = 0;
     secondes = 0;
     millisecondes = 0;
+    i = 0 ;
     timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
     start.disabled = false;
     pause.disabled = true
     clearInterval(interval)
+    /*while (newSpan.firstChild) {
+        newSpan.removeChild(newSpan.firstChild);
+    }*/
 
     if(pause.disabled = true){
         start.textContent = "Recommencer le chrono"   
