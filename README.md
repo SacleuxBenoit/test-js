@@ -17,6 +17,7 @@ J'utilise ce repos pour faire des tests pour mes cheat sheets mais aussi pour ex
 *   [Map and Set](Map-and-Set)
 *   [other test](other-Test)
 *   [DOM](DOM)
+*   [local data storage](local-Data-Storage)
 
 ## Algo
 
