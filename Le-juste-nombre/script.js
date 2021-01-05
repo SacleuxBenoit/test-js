@@ -1,4 +1,4 @@
-let random = Math.floor(Math.random() * 1000);
+/*let random = Math.floor(Math.random() * 1000);
 console.log(random)
 
 let question = "Entrez votre Number"
@@ -22,5 +22,4 @@ else if (answer == random){
     alert("Vous avez gagné en " + i + " coups")
 }
 
-}
-
+}*/
