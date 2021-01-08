@@ -17,7 +17,7 @@ function reduceLifeP1(min, max){
         buttonExecution.disabled = false
     }
     if(currentLifeP2 <= 0){
-        result.textContent = "Le joueur 1 à gagné.";
+        result.textContent = "Le joueur 1 a gagné.";
         disabledQuickAttackP1.disabled = true;
         disabledSlowAttackP1.disabled = true;
         disabledHealP1.disabled = true;

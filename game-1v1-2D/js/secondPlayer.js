@@ -14,7 +14,7 @@ function reduceLifeP2(min, max){
             showLifeP1.style.background = "red"
         }
         if(currentLifeP1 <= 0){
-            result.textContent = "Le joueur 2 à gagné.";
+            result.textContent = "Le joueur 2 a gagné.";
             disabledQuickAttackP2.disabled = true;
             disabledSlowAttackP2.disabled = true;
             disabledHealP2.disabled = true;
