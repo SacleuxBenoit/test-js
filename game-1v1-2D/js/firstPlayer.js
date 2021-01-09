@@ -32,6 +32,16 @@ function reduceLifeP1(min, max){
         buttonExecution.disabled = true;
         showLifeP2.textContent = " 0 %"
     }
+    verifyMana()
+}
+
+function verifyMana(){
+    if(mana <= 0){
+        disabledQuickAttackP1.disabled = true;
+        disabledSlowAttackP1.disabled = true;
+        disabledHealP1.disabled = true;
+        buttonExecution.disabled = true;
+    }
 }
 
 function quickAttackP1(){
