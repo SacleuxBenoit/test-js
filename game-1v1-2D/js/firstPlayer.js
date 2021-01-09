@@ -3,9 +3,14 @@ let disabledSlowAttackP1 = document.getElementById("disabledSlowAttackP1");
 let buttonExecution = document.getElementById("buttonExecution");
 let disabledHealP1 = document.getElementById("disabledHealP1");
 
+let mana = 100;
+
 function reduceLifeP1(min, max){
     let random = Math.floor((Math.random() * (max - min) + min));
     let currentLifeP2 = lifeP2 -= random;
+
+    mana -= 10;
+    showManaP1.textContent = mana + " %";
     showLifeP2.textContent = currentLifeP2 + " %";
 
     if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
