@@ -14,7 +14,7 @@ let manaP1 = 100;
 let manaP2 = 100;
 
 function redirection(){
-    document.location.href="Game/game.html";
+    document.location.href="Game/game.php";
 }
 
 showLifeP1.textContent = lifeP1 + " %";
