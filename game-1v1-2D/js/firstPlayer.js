@@ -3,14 +3,14 @@ let disabledSlowAttackP1 = document.getElementById("disabledSlowAttackP1");
 let buttonExecution = document.getElementById("buttonExecution");
 let disabledHealP1 = document.getElementById("disabledHealP1");
 
-let mana = 100;
+let manaP1 = 100;
 
 function reduceLifeP1(min, max){
     let random = Math.floor((Math.random() * (max - min) + min));
     let currentLifeP2 = lifeP2 -= random;
 
-    mana -= 10;
-    showManaP1.textContent = mana + " %";
+    manaP1 -= 10;
+    showManaP1.textContent = manaP1 + " %";
     showLifeP2.textContent = currentLifeP2 + " %";
 
     if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
@@ -36,7 +36,7 @@ function reduceLifeP1(min, max){
 }
 
 function verifyMana(){
-    if(mana <= 0){
+    if(manaP1 <= 0){
         disabledQuickAttackP1.disabled = true;
         disabledSlowAttackP1.disabled = true;
         disabledHealP1.disabled = true;
