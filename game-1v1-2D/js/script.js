@@ -28,7 +28,9 @@ function resetP1(){
     disabledSlowAttackP1.disabled = false;
     disabledHealP1.disabled = false;
     lifeP2 = 100;
-    showLifeP2.textContent = 100 + " %";
+    mana = 100;
+    showManaP2.textContent = mana + " %";
+    showLifeP2.textContent = lifeP2 + " %";
     showLifeP2.style.background = "greenyellow";
     buttonExecution.disabled = true
 }
@@ -38,7 +40,9 @@ function resetP2(){
     disabledSlowAttackP2.disabled = false;
     disabledHealP2.disabled = false;
     lifeP1 = 100;
-    showLifeP1.textContent = 100 + " %";
+    mana = 100;
+    showManaP1.textContent = mana + " %";
+    showLifeP1.textContent = lifeP1 + " %";
     showLifeP1.style.background = "greenyellow"
 }
 
