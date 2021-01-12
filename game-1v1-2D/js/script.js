@@ -18,8 +18,8 @@ function displayText(){
     showLifeP1.textContent = lifeP1 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     
-    showManaP1.textContent = manaP1 + " %";
-    showManaP2.textContent = manaP2 + " %";
+    showManaP1.textContent = 100 + " %";
+    showManaP2.textContent = 100 + " %";
 }
 
 displayText();
