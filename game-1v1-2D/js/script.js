@@ -14,11 +14,15 @@ function redirection(){
     document.location.href="Game/game.php";
 }
 
-showLifeP1.textContent = lifeP1 + " %";
-showLifeP2.textContent = lifeP2 + " %";
+function displayText(){
+    showLifeP1.textContent = lifeP1 + " %";
+    showLifeP2.textContent = lifeP2 + " %";
+    
+    showManaP1.textContent = manaP1 + " %";
+    showManaP2.textContent = manaP2 + " %";
+}
 
-showManaP1.textContent = manaP1 + " %";
-showManaP2.textContent = manaP2 + " %";
+displayText();
 
 function resetP1(){
     disabledQuickAttackP1.disabled = false;
