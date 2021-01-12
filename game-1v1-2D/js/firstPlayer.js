@@ -32,10 +32,10 @@ function reduceLifeP1(min, max){
         buttonExecution.disabled = true;
         showLifeP2.textContent = " 0 %"
     }
-    verifyMana()
+    verifyManaP1()
 }
 
-function verifyMana(){
+function verifyManaP1(){
     if(manaP1 <= 0){
         disabledQuickAttackP1.disabled = true;
         disabledSlowAttackP1.disabled = true;

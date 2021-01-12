@@ -2,14 +2,14 @@ let disabledQuickAttackP2 = document.getElementById("disabledQuickAttackP2");
 let disabledSlowAttackP2 = document.getElementById("disabledSlowAttackP2");
 let disabledHealP2 = document.getElementById("disabledHealP2");
 
-let mana = 100;
+let manaP2 = 100;
 
 function reduceLifeP2(min, max){
     let random = Math.floor((Math.random() * (max - min) + min));
     let currentLifeP1 = lifeP1 -= random;
 
-    mana -= 10;
-    showManaP2.textContent = mana + " %";
+    manaP2 -= 10;
+    showManaP2.textContent = manaP2 + " %";
     showLifeP1.textContent = currentLifeP1 + " %";
 
         if(currentLifeP1 <= 75){
@@ -27,6 +27,15 @@ function reduceLifeP2(min, max){
             disabledSlowAttackP1.disabled = true;
             disabledHealP1.disabled = true;
             showLifeP1.textContent = " 0 %"
+    }
+    verifyManaP2();
+}
+
+function verifyManaP2(){
+    if(manaP2 <= 0){
+        disabledQuickAttackP2.disabled = true;
+        disabledSlowAttackP2.disabled = true;
+        disabledHealP2.disabled = true;
     }
 }
 
