@@ -36,7 +36,7 @@ function reduceLifeP1(min, max, reduceMana){
 }
 
 function verifyManaP1(){
-    if(manaP1 <= 19 && manaP1 <= 9){
+    if(manaP1 <= 9){
         buttonExecution.disabled = true;
         disabledSlowAttackP1.disabled = true;
     }
