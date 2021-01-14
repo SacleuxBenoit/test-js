@@ -15,7 +15,7 @@ function reduceLifeP1(min, max, reduceMana){
 
     if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
         showLifeP2.style.background = "orange"
-        console.log(currentLifeP2)
+        disabledHealP2.disabled = false;
     }
     if(currentLifeP2 <= 25 && currentLifeP2 >= 1){
         showLifeP2.style.background = "red"
