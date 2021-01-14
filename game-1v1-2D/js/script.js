@@ -4,6 +4,7 @@ let showLifeP2 = document.getElementById("showLifeP2");
 let showManaP1 = document.getElementById("showManaP1");
 let showManaP2 = document.getElementById("showManaP2");
 
+let firstTitle = document.getElementById('firstTitle');
 let result = document.getElementById("result");
 
 
@@ -15,6 +16,8 @@ function redirection(){
 }
 
 function displayText(){
+    firstTitle.textContent = "Le joueur 1 commence."
+
     showLifeP1.textContent = lifeP1 + " %";
     showLifeP2.textContent = lifeP2 + " %";
     

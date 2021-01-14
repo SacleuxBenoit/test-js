@@ -30,6 +30,7 @@ function reduceLifeP2(min, max, reduceMana){
             showLifeP1.textContent = " 0 %"
     }
     verifyManaP2();
+    nextPlayerP2();
 }
 
 function verifyManaP2(){
@@ -57,4 +58,8 @@ function healP2(){
     if(currentLifeP2 >= 100){
         disabledHealP2.disabled = true
     }
+}
+
+function nextPlayerP2(){
+    firstTitle.textContent = "Au tour du joueur 1"
 }

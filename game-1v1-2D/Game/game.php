@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1 id="firstTitle">Le joueur 1 commence.</h1>
+    <h1 id="firstTitle"></h1>
 
     <div id="player1">
         <p id="pseudoP1"></p>
