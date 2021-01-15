@@ -69,4 +69,12 @@ function healP1(){
 
 function nextPlayerP1(){
     firstTitle.textContent = "Au tour du joueur 2"
+    disabledQuickAttackP1.disabled = true;
+    disabledSlowAttackP1.disabled = true;
+    disabledHealP1.disabled = true;
+    buttonExecution.disabled = true;
+
+    disabledQuickAttackP2.disabled = false;
+    disabledSlowAttackP2.disabled = false;
+    disabledHealP2.disabled = false;
 }
