@@ -1,7 +1,7 @@
-let disabledQuickAttackP1 = document.getElementById("disabledQuickAttackP1");
-let disabledSlowAttackP1 = document.getElementById("disabledSlowAttackP1");
-let buttonExecution = document.getElementById("buttonExecution");
-let disabledHealP1 = document.getElementById("disabledHealP1");
+let QuickAttackP1 = document.getElementById("QuickAttackP1");
+let SlowAttackP1 = document.getElementById("SlowAttackP1");
+let Execution = document.getElementById("Execution");
+let HealP1 = document.getElementById("HealP1");
 
 let manaP1 = 100;
 
@@ -15,7 +15,7 @@ function reduceLifeP1(min, max, reduceMana){
 
     if(currentLifeP2 <= 75 && currentLifeP2 >= 26){
         showLifeP2.style.background = "orange"
-        disabledHealP2.disabled = false;
+        HealP2.disabled = false;
     }
     if(currentLifeP2 <= 25 && currentLifeP2 >= 1){
         showLifeP2.style.background = "red"
@@ -38,8 +38,8 @@ function reduceLifeP1(min, max, reduceMana){
 
 function verifyManaP1(){
     if(manaP1 <= 9){
-        buttonExecution.disabled = true;
-        disabledSlowAttackP1.disabled = true;
+        Execution.disabled = true;
+        SlowAttackP1.disabled = true;
     }
 }
 
@@ -63,18 +63,18 @@ function healP1(){
     showLifeP1.textContent = currentLifeP1 + " %";
 
     if(currentLifeP1 >= 100){
-        disabledHealP1.disabled = true
+        HealP1.disabled = true
     }
 }
 
 function nextPlayerP1(){
     firstTitle.textContent = "Au tour du joueur 2"
-    disabledQuickAttackP1.disabled = true;
-    disabledSlowAttackP1.disabled = true;
-    disabledHealP1.disabled = true;
-    buttonExecution.disabled = true;
+    QuickAttackP1.disabled = true;
+    SlowAttackP1.disabled = true;
+    HealP1.disabled = true;
+    Execution.disabled = true;
 
-    disabledQuickAttackP2.disabled = false;
-    disabledSlowAttackP2.disabled = false;
-    disabledHealP2.disabled = false;
+    QuickAttackP2.disabled = false;
+    SlowAttackP2.disabled = false;
+    HealP2.disabled = false;
 }

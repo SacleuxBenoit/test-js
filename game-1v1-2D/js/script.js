@@ -28,9 +28,9 @@ function displayText(){
 displayText();
 
 function resetP1(){
-    disabledQuickAttackP1.disabled = false;
-    disabledSlowAttackP1.disabled = false;
-    disabledHealP1.disabled = true;
+    QuickAttackP1.disabled = false;
+    SlowAttackP1.disabled = false;
+    HealP1.disabled = true;
     lifeP2 = 100;
     manaP2 = 100;
     showManaP2.textContent = manaP2 + " %";
@@ -40,9 +40,9 @@ function resetP1(){
 }
 
 function resetP2(){
-    disabledQuickAttackP2.disabled = false;
-    disabledSlowAttackP2.disabled = false;
-    disabledHealP2.disabled = true;
+    QuickAttackP2.disabled = false;
+    SlowAttackP2.disabled = false;
+    HealP2.disabled = true;
     lifeP1 = 100;
     manaP1 = 100;
     showManaP1.textContent = manaP1 + " %";
