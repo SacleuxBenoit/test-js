@@ -9,11 +9,15 @@ let millisecondes = 0;
 let interval;
 let i = 0;
 
-timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+function displayTimer(){
+    timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+}
+
+displayTimer();
 
 start.addEventListener('click', () =>{
     interval = setInterval(function(){
-        timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+        displayTimer();
         millisecondes += 1;
         if(millisecondes >= 10){
             secondes ++;
@@ -52,7 +56,7 @@ finish.addEventListener('click', () =>{
     minutes = 0;
     secondes = 0;
     millisecondes = 0;
-    timer.textContent = heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ";
+    displayTimer();
     start.disabled = false;
     pause.disabled = true
     clearInterval(interval)
