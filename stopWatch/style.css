@@ -1,5 +1,11 @@
 body{
+    background-image: url('./images/landscape_background.jpg');
+    background-size: cover;
     text-align: center;
+}
+
+p{
+    color: rgb(73, 91, 97);
 }
 
 h1{
