@@ -32,22 +32,22 @@ start.addEventListener('click', () =>{
      },100)
     start.disabled = !start.disabled;
     if(pause.disabled = true){
-        start.textContent = "Commencer le chrono"
+        start.textContent = "Commencer le chrono";
     }
     pause.disabled = false;
 });
 
 pause.addEventListener('click', () =>{
-    let newSpan = document.createElement("span")
-    let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ")
+    let newSpan = document.createElement("span");
+    let save =  document.createTextNode(++i + ") " + heures + " heures " + minutes + " minutes " + secondes + " secondes " + millisecondes + " millisecondes ");
     start.disabled = false;
     pause.disabled = true;
-    newSpan.appendChild(save)
-    document.body.appendChild(newSpan)
-    clearInterval(interval)
+    newSpan.appendChild(save);
+    document.body.appendChild(newSpan);
+    clearInterval(interval);
     
     if(pause.disabled = true){
-        start.textContent = "Reprendre"
+        start.textContent = "Reprendre";
     }
 });
 
@@ -58,10 +58,10 @@ finish.addEventListener('click', () =>{
     millisecondes = 0;
     displayTimer();
     start.disabled = false;
-    pause.disabled = true
+    pause.disabled = true;
     clearInterval(interval)
 
     if(pause.disabled = true){
-        start.textContent = "Recommencer le chrono"   
+        start.textContent = "Recommencer le chrono";
     }
 })
